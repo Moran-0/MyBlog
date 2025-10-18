@@ -72,7 +72,7 @@ Remote SSH 自动下载的.vscode-server文件结构如下：
    ```
 3. 便捷操作
 
-<img src="../img/image-20251018182502203.png" alt="image-20251018182502203" style="zoom: 33%;" /><img src="../img/image-20251018182534398.png" alt="image-20251018182534398" style="zoom: 33%;" />
+<img src="/img/image-20251018182502203.png" alt="image-20251018182502203" style="zoom: 33%;" /><img src="/img/image-20251018182534398.png" alt="image-20251018182534398" style="zoom: 33%;" />
 
 
 4. 记下其中的 `Commit:` 一行
