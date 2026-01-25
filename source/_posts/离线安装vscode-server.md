@@ -9,6 +9,7 @@ tags:
   - ssh
   - 远程连接
   - 离线部署
+cover: /img/cover/130654953_p0.jpg
 ---
 
 # Remote SSH插件在Linux服务器上离线安装vscode-server

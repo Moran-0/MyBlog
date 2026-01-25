@@ -56,7 +56,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/iocn.svg
+favicon: /favicon.ico
 
 avatar:
   img: /img/avatar.jpg
@@ -104,7 +104,7 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
+    - /img/cover/default.jpg
 
 # Replace Broken Images
 error_img:
@@ -164,9 +164,10 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
-  source: 2
+  source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub: "欢迎来到墨染的个人博客"
+  sub: 
+    - 欢迎来到墨染的个人博客
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -910,7 +911,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
