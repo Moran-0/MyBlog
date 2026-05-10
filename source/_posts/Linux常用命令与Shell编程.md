@@ -4,7 +4,6 @@ date: 2026-01-25 14:29:23
 tags:
 - shell
 - linux
-cover: /img/cover/spread_legs-swimsuit.jpg
 ---
 
 #  远程（和本地）文件同步工具rsync

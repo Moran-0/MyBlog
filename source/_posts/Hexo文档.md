@@ -3,7 +3,6 @@ title: Hexo文档
 date: 2025-11-01 14:16:14
 tags:
 - Hexo
-cover: /img/cover/blue_archive-underwear.jpg
 ---
 
 # Hexo文档

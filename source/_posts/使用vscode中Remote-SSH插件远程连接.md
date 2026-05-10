@@ -8,7 +8,6 @@ tags:
   - ssh
   - 远程连接
   - 免密登录
-cover: /img/cover/131779336_p0.jpg
 ---
 
 # 使用 VSCode 的RemoteSSH插件连接远程服务器

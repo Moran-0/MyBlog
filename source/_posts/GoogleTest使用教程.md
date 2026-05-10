@@ -5,7 +5,6 @@ tags:
 - c++
 - GoogleTest
 - 单元测试
-cover: /img/cover/137067735_p0.jpg
 ---
 
 # GoogleTest介绍

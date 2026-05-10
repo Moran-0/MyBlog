@@ -1,4 +1,18 @@
-# 个人博客项目总体架构
+# 个人博客
+
+[Hexo](https://hexo.io/zh-cn/) 博客框架 + Butterfly主题美化。基于markdown文件生成静态网页。
+
+博客提供三种部署模式：
+
+- 本地部署
+- GitHub Action Page部署
+- 云服务器Nginx部署
+
+
+
+# Nginx部署环境
+
+## 部署逻辑
 
 ```
 浏览器
@@ -16,13 +30,13 @@ Hexo 生成的静态文件（public/）
 - ✅ 使用 80 / 443（不容易被封）
 - ✅ 可轻松上 HTTPS
 
-# 服务器环境
+## 服务器环境
 
 - Linux（Ubuntu 20.04）
 - 具备公网 IP
 - 域名（目前暂无，后续可扩展）
 
-## 基础依赖
+- 基础依赖
 
 ```bash
 # git nginx nodejs npm
@@ -35,9 +49,9 @@ npm install -g hexo-cli
 
 
 
-# Hexo项目静态文件生成
+# Hexo静态文件
 
-### 1️⃣ 拉取或创建项目
+1. 拉取或创建项目
 
 ```
 git clone https://xxx/your-hexo-blog.git
@@ -45,7 +59,7 @@ cd your-hexo-blog
 npm install
 ```
 
-### 2️⃣ 生成静态文件
+2. 生成静态文件
 
 ```
 hexo clean
@@ -53,7 +67,7 @@ hexo generate
 # 或 hexo g
 ```
 
-生成目录：
+3. 文件生成目录：
 
 ```
 your-hexo-blog/
@@ -65,8 +79,6 @@ your-hexo-blog/
 
 
 # Nginx 部署
-
-
 
 ### 1.  放置网站文件
 
@@ -117,15 +129,11 @@ systemctl reload nginx
 # 禁用后重新检测并加载
 ```
 
-现在访问：
-
-```
-http://你的公网IP
-```
+访问：`http://服务器公网IP`
 
 ------
 
-### 3. 部署脚本
+### 3. Nginx部署脚本
 
 将上述动作统一编写成脚本操作，避免重复操作。
 
@@ -168,7 +176,9 @@ echo "==> Deploy finished successfully 🎉"
 
 
 
-# GitHub pages
+# GitHub Pages部署
 
-本项目另一同时存在的部署方案为使用GitHub Actions自动进行构建部署。每当有push动作时便会触发工作流进行构建hexo静态文件并部署到GitHub Pages。
+使用GitHub Actions自动进行构建部署。每当Github仓库发生push动作时，触发Github工作流执行Hexo静态文件构建并部署到GitHub Pages。
+
+访问方式：[MyBlog](https://moran-0.github.io/MyBlog/)
 
